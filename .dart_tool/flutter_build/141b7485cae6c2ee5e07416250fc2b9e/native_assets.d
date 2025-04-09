@@ -1,0 +1,1 @@
+ D:\\1_MAIN\ PROJECT\\shms_fixed\\.dart_tool\\flutter_build\\141b7485cae6c2ee5e07416250fc2b9e\\native_assets.yaml: 

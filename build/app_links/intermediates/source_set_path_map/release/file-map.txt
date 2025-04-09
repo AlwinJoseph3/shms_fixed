@@ -1,0 +1,12 @@
+com.llfbandit.app_links-jetified-annotation-experimental-1.1.0-0 C:\Users\ZER0\.gradle\caches\transforms-3\02315cc9f75263553d2042718fc375ee\transformed\jetified-annotation-experimental-1.1.0\res
+com.llfbandit.app_links-jetified-window-1.0.0-beta04-1 C:\Users\ZER0\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\res
+com.llfbandit.app_links-jetified-window-java-1.0.0-beta04-2 C:\Users\ZER0\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\res
+com.llfbandit.app_links-core-1.6.0-3 C:\Users\ZER0\.gradle\caches\transforms-3\d08c73bfb05384f2e52578171dbd141e\transformed\core-1.6.0\res
+com.llfbandit.app_links-main-4 C:\Users\ZER0\AppData\Local\Pub\Cache\hosted\pub.dev\app_links-6.2.0\android\src\main\res
+com.llfbandit.app_links-release-5 C:\Users\ZER0\AppData\Local\Pub\Cache\hosted\pub.dev\app_links-6.2.0\android\src\release\res
+com.llfbandit.app_links-pngs-6 D:\1_MAIN PROJECT\shms_fixed\build\app_links\generated\res\pngs\release
+com.llfbandit.app_links-resValues-7 D:\1_MAIN PROJECT\shms_fixed\build\app_links\generated\res\resValues\release
+com.llfbandit.app_links-rs-8 D:\1_MAIN PROJECT\shms_fixed\build\app_links\generated\res\rs\release
+com.llfbandit.app_links-mergeReleaseResources-9 D:\1_MAIN PROJECT\shms_fixed\build\app_links\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.llfbandit.app_links-mergeReleaseResources-10 D:\1_MAIN PROJECT\shms_fixed\build\app_links\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.llfbandit.app_links-merged_res-11 D:\1_MAIN PROJECT\shms_fixed\build\app_links\intermediates\merged_res\release
