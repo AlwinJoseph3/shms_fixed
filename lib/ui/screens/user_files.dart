@@ -538,7 +538,7 @@ class _UserFilesScreenState extends State<UserFilesScreen>
                 const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             onTap: () {
               final userId = Supabase.instance.client.auth.currentUser?.id;
-              final url = "http://192.168.0.124:5000/outputs/$userId/${file.name}";
+              final url = "<use your IP>/outputs/$userId/${file.name}";
               Navigator.push(
                 context,
                 MaterialPageRoute(
