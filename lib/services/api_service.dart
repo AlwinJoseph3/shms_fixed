@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.0.124:5000'; // your Flask server IP
+  static const String baseUrl = '<use your IP>'; // your Flask server IP
 
   static String? get _userId => Supabase.instance.client.auth.currentUser?.id;
 
