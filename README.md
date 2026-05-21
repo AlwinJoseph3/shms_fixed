@@ -1,69 +1,89 @@
-# 🏥 SHMS: Smart Health Monitoring System
-> A comprehensive Flutter-based platform for real-time health tracking and patient data management.
+# SHMS — Smart Health Management System
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+> *AI-powered medical imaging analysis and automated diagnostic report generation.*
 
----
-
-## 🩺 Project Overview
-**SHMS (Smart Health Monitoring System)** was developed to bridge the gap between patients and healthcare providers. By leveraging IoT integration and mobile technology, it provides a seamless way to monitor vital signs and manage medical records on the go.
-
-### **Core Pillars**
-* **Monitor:** Track vital signs like heart rate, SpO2, and temperature in real-time.
-* **Alert:** Automated emergency triggers and notification systems for critical health thresholds.
-* **Manage:** Secure digital vault for prescriptions, lab reports, and medical history.
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![YOLOv5](https://img.shields.io/badge/YOLOv5-00FFFF?style=flat&logo=github&logoColor=black)](https://github.com/ultralytics/yolov5)
+[![Pegasus](https://img.shields.io/badge/Pegasus_Transformer-FF6F00?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/google/pegasus-xsum)
 
 ---
 
-## 📽️ Interface Preview
-<div align="center">
-  <img src="./screenshots/mockup.png" width="100%" alt="SHMS Hero Image" style="border-radius: 20px;" />
-</div>
+## What is SHMS?
 
-| Login | Home | Report | Upload |
-| :---: | :---: | :---: | :---: |
-| <img src="./screenshots/Login page.PNG" width="200" /> | <img src="./screenshots/home.PNG" width="200" /> | <img src="./screenshots/Report page.PNG" width="200" /> | <img src="./screenshots/Type.PNG" width ="200" > |
+SHMS is an AI-powered pipeline that combines computer vision and natural language generation to assist in medical imaging analysis.
+
+Given a chest X-ray, the system detects and localises disease markers using YOLOv5, then automatically generates a plain-language diagnostic summary using the Pegasus transformer — bridging the gap between raw model output and readable clinical reporting.
 
 ---
 
-## 🛠️ Technical Implementation
+## Pipeline Overview
 
-* **Front-End:** Developed using **Flutter & Dart** for a cross-platform high-performance experience.
-* **Backend & Auth:** Powered by **Firebase** for real-time database synchronization and secure user authentication.
-* **State Management:** Built with a clean architecture (MVC/Provider) to ensure scalable and maintainable code.
-* **Design Language:** A "Clinical Clean" UI utilizing soothing blues (#2196F3) and high-contrast alert states.
+```
+Medical Image (X-Ray)
+        ↓
+  Preprocessing & Augmentation
+        ↓
+  YOLOv5 Disease Detection
+  (bounding boxes + classifications)
+        ↓
+  Pegasus Transformer
+  (structured report → plain-language summary)
+        ↓
+  Diagnostic Report Output
+```
+
+---
+
+## Datasets Used
+
+| Dataset | Description |
+|---|---|
+| **MIMIC-CXR** | Large-scale chest X-ray dataset with radiology reports |
+| **NIH Chest X-Ray** | 112,000+ frontal-view X-rays across 14 disease classes |
+
+Both datasets were curated, cleaned, and preprocessed to ensure pipeline integrity before model training.
 
 ---
 
-## ✨ Key Features
+## Features
 
-### 📊 Health Analytics
-* **Real-time Vitals:** Live streaming of health data from wearable sensors via Bluetooth/Wi-Fi.
-* **Historical Trends:** Graphical visualization of health metrics over days, weeks, or months.
-* **Smart Diagnosis:** Rule-based logic to categorize health states into *Normal*, *Warning*, or *Critical*.
+- 🔍 **Disease detection** — YOLOv5 identifies and localises pathological markers in chest X-rays
+- 📝 **Automated report summarisation** — Pegasus generates readable diagnostic summaries from structured findings
+- 🧹 **Large-scale dataset preprocessing** — MIMIC-CXR and NIH Chest X-Ray pipelines with integrity validation
+- 📊 **Deep learning model optimisation** — trained and evaluated for real-world medical imaging conditions
+
+---
+
+## Tech Stack
+
+| Component | Technology |
+|---|---|
+| Disease Detection | YOLOv5 (computer vision) |
+| Report Generation | Pegasus transformer (NLP) |
+| Data Processing | Python, NumPy, Pandas |
+| Model Training | PyTorch |
+| Datasets | MIMIC-CXR, NIH Chest X-Ray |
 
 ---
 
-## 📦 How to Run
-1.  **Clone the repo:**
-    ```bash
-    git clone [https://github.com/AlwinJoseph3/shms_fixed.git](https://github.com/AlwinJoseph3/shms_fixed.git)
-    ```
-2.  **Get dependencies:**
-    ```bash
-    flutter pub get
-    ```
-3.  **Run the app:**
-    ```bash
-    flutter run
-    ```
+## Why This Matters
+
+Radiologists review hundreds of scans daily. Automated first-pass analysis tools like SHMS can flag high-priority cases and reduce report turnaround time — making AI a genuine clinical assistant, not a replacement.
 
 ---
-## Contacts
 
-[GitHub](https://github.com/AlwinJoseph3) · [LinkedIn](https://www.linkedin.com/in/alwin-joseph-807420221/) 
+## Getting Started
+
+```bash
+git clone https://github.com/AlwinJoseph3/shms_fixed.git
+cd shms_fixed
+pip install -r requirements.txt
+```
+
+> **Note:** MIMIC-CXR access requires credentialed PhysioNet registration. NIH Chest X-Ray is publicly available via Kaggle.
 
 ---
-<p align="center">Made with ❤️ for a Healthier Community</p>
+
+## Built By
+
+**Alwin Joseph** — [Portfolio](https://alwinjoseph.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/alwin-joseph-807420221/) · [GitHub](https://github.com/AlwinJoseph3)
